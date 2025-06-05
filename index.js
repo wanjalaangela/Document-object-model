@@ -7,16 +7,16 @@ navbar.style.backgroundColor = '#1A3F22';
 navbar.style.padding = '20px 20px'; 
 navbar.style.listStyleType = 'none'; 
 navbar.style.margin = '0'; 
-navbar.style.padding = '15px'; 
+// navbar.style.padding = '15px'; 
 navbar.style.display = 'flex'; 
 navbar.style.justifyContent = 'space-around';
+navbar.style.fontSize = '25px'
 
 for (let link of navLinks) {
     link.style.color = 'white'; 
     link.style.textDecoration = 'none'; 
     link.style.padding = '10px 15px'; 
-    link.style.transition = 'background-color 0.3s'; 
-
+    
     link.addEventListener('mouseover', () => {
         link.style.backgroundColor = '#905A01'; 
         link.style.borderRadius = '5px'; 
@@ -29,7 +29,7 @@ for (let link of navLinks) {
 
 
 const logo = document.getElementById('logo');
-logo.style.fontSize = '24px'; 
+logo.style.fontSize = '30px'; 
 logo.style.fontWeight = 'bold'; 
 logo.style.marginRight = 'auto'; 
 
@@ -38,7 +38,7 @@ logo.style.marginRight = 'auto';
 const title = document.getElementById('title');
 title.style.textAlign = 'center'; 
 title.style.color = '#1A3F22';
-title.style.fontSize = '50px';
+title.style.fontSize = '80px';
 title.style.marginTop = '2cm';
 
 
@@ -48,7 +48,7 @@ body.style.backgroundColor = 'Silver';
 
 const myParagraph = document.getElementById('myParagraph');
 myParagraph.style.textAlign = 'center'; 
-myParagraph.style.fontSize = '25px';
+myParagraph.style.fontSize = '45px';
 myParagraph.style.color = '#905A01'
 
 
@@ -59,6 +59,7 @@ h3Elements.forEach(h3 => {
     h3.style.textAlign = 'center'; 
     h3.style.color = '#905A01';
     h3.style.marginTop = '2cm'
+    h3.style.fontSize = '35px'
 });
 
 
@@ -69,13 +70,14 @@ shopButton.addEventListener('click', ()=>{
     shopButton.textContent = 'Confirmed!'
     
 });
-    shopButton.style.width = '3cm'
-    shopButton.style.height = '1cm'
-    shopButton.style.marginLeft = '22.3cm'
+    shopButton.style.width = '4cm'
+    shopButton.style.height = '1.5cm'
+    shopButton.style.marginLeft = '21.5cm'
     shopButton.style.marginTop = '1cm'
     shopButton.style.border = 'none'
     shopButton.style.backgroundColor = '#1A3F22'
     shopButton.style.color = 'white'
+    shopButton.style.fontSize = '20px'
     
 
 
@@ -97,7 +99,7 @@ const addImagesToList = (list, items) => {
         const listItem = document.createElement('li');
         const img = document.createElement('img');
         img.src = item.imgSrc;
-        img.style.width = '100px'; 
+        img.style.width = '150px'; 
         img.style.height = 'auto'; 
         listItem.appendChild(img); 
         listItem.appendChild(document.createTextNode(item.name)); 
@@ -126,7 +128,7 @@ const existingFruitItems = fruitList.querySelectorAll('li');
 existingFruitItems.forEach((item, index) => {
     const img = document.createElement('img');
     img.src = existingFruits[index].imgSrc; 
-    img.style.width = '100px'; 
+    img.style.width = '150px'; 
     img.style.height = 'auto'; 
 
     item.innerHTML = ''; 
@@ -138,7 +140,7 @@ const existingVegetableItems = vegetableList.querySelectorAll('li');
 existingVegetableItems.forEach((item, index) => {
     const img = document.createElement('img');
     img.src = existingVegetables[index].imgSrc; 
-    img.style.width = '100px'; 
+    img.style.width = '150px'; 
     img.style.height = 'auto'; 
 
     item.innerHTML = ''; 
@@ -171,6 +173,8 @@ const styleList = (list) => {
         item.style.display = 'flex'; 
         item.style.flexDirection = 'column'; 
         item.style.marginLeft = '2.5cm'
+        item.style.fontSize = '20px'
+        item.fontWeight = '40px'
     });
 };
 
@@ -184,6 +188,7 @@ const searchInput = document.getElementById('fruitSearch');
 
 
 searchInput.style.width = '82%'; 
+searchInput.style.height ='1cm'
 searchInput.style.padding = '10px'; 
 searchInput.style.marginBottom = '20px';
 searchInput.style.border = 'none'; 
