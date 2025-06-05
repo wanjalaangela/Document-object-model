@@ -71,7 +71,7 @@ shopButton.addEventListener('click', ()=>{
 });
     shopButton.style.width = '3cm'
     shopButton.style.height = '1cm'
-    shopButton.style.marginLeft = '20.3cm'
+    shopButton.style.marginLeft = '22.3cm'
     shopButton.style.marginTop = '1cm'
     shopButton.style.border = 'none'
     shopButton.style.backgroundColor = '#1A3F22'
@@ -170,7 +170,7 @@ const styleList = (list) => {
         item.style.marginRight = '30px'; 
         item.style.display = 'flex'; 
         item.style.flexDirection = 'column'; 
-        item.style.marginLeft = '3.5cm'
+        item.style.marginLeft = '2.5cm'
     });
 };
 
